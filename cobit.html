@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>COBIT</title>
+   </head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="css/cobit.css"/>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <body>
+     <div id="header"></div>
+      <div class="parallax row align-items-center">
+         <div class="col titulo">
+            <h1><b>COBIT</b></h1>
+         </div>
+      </div>
+      <div class="container m-mimg">
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/que-es.svg"  width="250" height="250"  class="rounded mx-auto d-block" alt="...">
+            <div class="col">
+              <p style="text-align:center;">Las Auditorias nos permiten conocer diferentes aspectos que están sucediendo o sucedieron en algún momento del tiempo en las operaciones, ofreciendo  una clara visión de lo que puede estar deteniendo el crecimiento rentable, el cumplimiento normativo o de regulaciones, la mejora de los productos o servicios. Por lo que el Control de los Riesgos detectados en estas Auditorías deben de tener un seguimiento y madurez en su atención y resolución.</p>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <img src="assets/como.svg"  width="250" height="250"  class="rounded mx-auto d-block" alt="...">
+            <div class="col">
+              <p style="text-align:center;">Brindamos la gestión de un proyecto que genera un análisis GAP de las operaciones en la organización o institución, brindando un nivel de madurez de los procesos, riesgos y de la gente que participa en la operación y su gestión. Utilizando mejores practicas internacionales y herramientas, para estos análisis y auditorias que permiten bajo estándares internacionales dar seguimiento a los riesgos y controles.</p>
+            </div>
+          </div>
+        </div>
+
+         <div class="row contenido">
+
+            <div class="col" style="margin:auto;">
+               <img src="assets/cobit-3.svg" class="rounded mx-auto d-block max-t" alt="...">
+            </div>
+         </div>
+      </div>
+      <div id="footer"></div>
+   </body>
+   <script src="js/jQuery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+ $(function(){
+   $("#header").load("navbar.html");
+   $("#footer").load("footer.html");
+ });
+</script>
+<script src="https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js"></script>
+<script>
+  window.loadWatsonAssistantChat({
+    integrationID: "43c35974-19fb-47b6-8058-939a0e7bbc33",
+    region: "us-south"
+  }).then(function(instance){
+    instance.render();
+  });
+</script>
+</html>

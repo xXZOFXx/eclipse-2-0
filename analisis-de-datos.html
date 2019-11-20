@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Análisis de Datos</title>
+   </head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="css/analisis-de-datos.css"/>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <body>
+    <div id="header"></div>
+      <div class="parallax row align-items-center">
+         <div class="col titulo">
+            <h1><b>Análisis de Datos</b></h1>
+         </div>
+      </div>
+
+
+      <div class="row" style="margin-top:4%;">
+         <div class="col-md-6">
+            <img src="assets/que-es.svg"  width="250" height="250" class="rounded mx-auto d-block" alt="...">
+            <div class="row">
+               <div class="col-md-2">
+               </div>
+               <div class="col-md-8">
+                 <p>La analítica es una mezcla de ciencia y arte.
+                    En la parte técnica, el sector primario del mundo digital, es donde se obtiene la materia prima directamente de la naturaleza de los usuarios, el dato. Es por eso que siempre se necesita algo más allá de la ciencia, en donde se centra ese punto de originalidad, de raciocinio creativo y de pensamiento paralelo para conseguir siempre la solución ideal.
+                 </p>
+               </div>
+               <div class="col-md-2">
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6">
+            <img src="assets/como.svg" width="250" height="250" class="rounded mx-auto d-block" alt="...">
+            <div class="row">
+               <div class="col-md-2">
+               </div>
+               <div class="col-md-8">
+<p>¡Clasificando los datos disponibles! Utilizamos plataforma de Watson de IBM.</p>
+               </div>
+               <div class="col-md-2">
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3 th2">
+               <img src="assets/beneficios.svg" class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col-md-9" style="margin:auto;">
+               <hr>
+            </div>
+         </div>
+         <div class="row mar-b">
+            <div class="conten-box">
+              <div class="row">
+                <div class="col-md-6">
+                   <div class="row">
+                      <div class="col-md-4">
+                         <img src="assets/analisis-de-datos/beneficios/1.svg" width="60" height="60" class="rounded mx-auto d-block" alt="...">
+                      </div>
+                      <div class="col-md-8 text-b">
+                         <p>Descubrimiento de necesidades y puntos de mejora.</p>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="row">
+                      <div class="col-md-4">
+                         <img src="assets/analisis-de-datos/beneficios/2.svg" width="60" height="60" class="rounded mx-auto d-block" alt="...">
+                      </div>
+                      <div class="col-md-8 text-b">
+                         <p>Evaluación mas eficiente de productos y servicios de las organizaciones.</p>
+                      </div>
+                   </div>
+              </div>
+              <div class="col-md-6">
+                 <div class="row">
+                    <div class="col-md-4">
+                       <img src="assets/analisis-de-datos/beneficios/3.svg" width="60" height="60" class="rounded mx-auto d-block" alt="...">
+                    </div>
+                    <div class="col-md-8 text-b">
+                       <p>Identificación de nuevas oportunidades de negocio.</p>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-6">
+                 <div class="row">
+                    <div class="col-md-4">
+                       <img src="assets/analisis-de-datos/beneficios/4.svg" width="60" height="60" class="rounded mx-auto d-block" alt="...">
+                    </div>
+                    <div class="col-md-8 text-b">
+                       <p>Mejora accesibilidad y fluidez de información.</p>
+                    </div>
+                 </div>
+              </div>
+              </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div id="footer"></div>
+   </body>
+   <script src="js/jQuery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+    $(function(){
+      $("#header").load("navbar.html");
+      $("#footer").load("footer.html");
+    });
+   </script>
+   <script src="https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js"></script>
+   <script>
+     window.loadWatsonAssistantChat({
+       integrationID: "43c35974-19fb-47b6-8058-939a0e7bbc33",
+       region: "us-south"
+     }).then(function(instance){
+       instance.render();
+     });
+   </script>
+   </html>

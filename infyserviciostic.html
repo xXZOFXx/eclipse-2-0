@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Infraestructura TIC</title>
+   </head>
+   <!--efecto prueba-->
+   <link rel="stylesheet" href="css/default.css"/>
+   <link rel="stylesheet" href="css/component1.css"/>
+   <script src="js/modernizr.custom.js"></script>
+   <!--efecto prueba fin-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="css/ciberseguridad-y-riesgo-informatico.css"/>
+   <link rel="stylesheet" href="css/bootstrap.css"/>
+   <body>
+    <div id="header"></div>
+      <div class="parallax row align-items-center">
+         <div class="col titulo">
+            <h1><b>Infraestructura TIC</b></h1>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4 space-image">
+               <div class="">
+                  <ul class="grid cs-style-3">
+                     <li>
+                        <figure class="imagen">
+                           <a href="datacenter.html">
+                           <img src="assets/infraestructura-tic/inf1.svg" width="300" height="auto" class="rounded mx-auto d-block" alt="...">
+                           </a>
+                        </figure>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-4 space-image">
+               <div class="">
+                  <ul class="grid cs-style-3">
+                     <li>
+                        <figure class="imagen">
+                           <a href="lan.html">
+                           <img src="assets/infraestructura-tic/inf2.svg" width="300"  height="auto" class="rounded mx-auto d-block" alt="...">
+                           </a>
+                        </figure>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-4 space-image">
+               <div class="">
+                  <ul class="grid cs-style-3">
+                     <li>
+                        <figure class="imagen">
+                           <a href="virtualizacion.html">
+                           <img src="assets/infraestructura-tic/inf3.svg" width="300"  height="auto"class="rounded mx-auto d-block" alt="...">
+                           </a>
+                        </figure>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-6 space-image">
+               <div class="">
+                  <ul class="grid cs-style-3">
+                     <li>
+                        <figure  class="imagen">
+                           <a href="wireless.html">
+                           <img src="assets/infraestructura-tic/inf4.svg" width="300"  height="auto" class="rounded mx-auto d-block" alt="...">
+                           </a>
+                        </figure>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="col-md-6 space-image">
+               <div class="">
+                  <ul class="grid cs-style-3">
+                     <li>
+                        <figure  class="imagen">
+                           <a href="seguridad.html">
+                           <img src="assets/infraestructura-tic/inf5.svg" width="300"  height="auto" class="rounded mx-auto d-block" alt="...">
+                           </a>
+                        </figure>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="footer"></div>
+      <script src="js/toucheffects.js"></script>
+   </body>
+   <script src="js/jQuery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+ $(function(){
+   $("#header").load("navbar.html");
+   $("#footer").load("footer.html");
+ });
+</script>
+<script src="https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js"></script>
+<script>
+  window.loadWatsonAssistantChat({
+    integrationID: "43c35974-19fb-47b6-8058-939a0e7bbc33",
+    region: "us-south"
+  }).then(function(instance){
+    instance.render();
+  });
+</script>
+</html>

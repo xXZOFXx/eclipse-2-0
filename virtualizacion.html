@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Virtualización</title>
+  </head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/virtualizacion.css"/>
+
+  <body>
+  <div id="header"></div>
+    <div class="parallax row align-items-center">
+       <div class="col titulo">
+          <h1><b>Virtualización</b></h1>
+       </div>
+    </div>
+
+
+    <div class="row" style="margin-top:4%;">
+       <div class="col-md-6">
+          <img src="assets/que-es.svg"  width="250" height="250" class="rounded mx-auto d-block" alt="...">
+          <div class="row">
+             <div class="col-md-2">
+             </div>
+             <div class="col-md-8">
+               <p>Abstracción de los recursos de una computadora, que crea una capa de abstracción entre el hardware de la maquina fisica y el sistema operatio de la máquina virtual, dividiéndos el recurso en uno o más entornos de ejecución.</p>
+             </div>
+             <div class="col-md-2">
+             </div>
+          </div>
+       </div>
+       <div class="col-md-6">
+          <img src="assets/como.svg" width="250" height="250" class="rounded mx-auto d-block" alt="...">
+          <div class="row">
+             <div class="col-md-2">
+             </div>
+             <div class="col-md-8">
+               <p>Como eclipse es una empresa que tiene una relación directa con el fabricante de este tipo de soluciones y cuenta con personal capacitado y certificado para entender las necesidades y requerimentos de nuestros clientes para ver de qué manera se adaptan este tipo de soluciones, con servidores de mayor capacidad.</p>
+             </div>
+             <div class="col-md-2">
+             </div>
+          </div>
+       </div>
+    </div>
+
+
+
+
+<div id="footer"></div>
+  </body>
+
+  <script src="js/jQuery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+   $(function(){
+     $("#header").load("navbar.html");
+     $("#footer").load("footer.html");
+   });
+  </script>
+  <script src="https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js"></script>
+  <script>
+    window.loadWatsonAssistantChat({
+      integrationID: "43c35974-19fb-47b6-8058-939a0e7bbc33",
+      region: "us-south"
+    }).then(function(instance){
+      instance.render();
+    });
+  </script>
+</html>

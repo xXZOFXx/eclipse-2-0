@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Transformación Digital</title>
+   </head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/transformacion-digital.css"/>
+   <link rel="stylesheet" href="css/bootstrap.css"/>
+   <link rel="stylesheet" href="css/default.css"/>
+   <link rel="stylesheet" href="css/component1.css"/>
+   <script src="js/modernizr.custom.js"></script>
+   <body>
+      <div id="header"></div>
+      <div class="parallax row align-items-center">
+         <div class="col titulo">
+            <h1><b>Transformación Digital</b></h1>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+           <div class="col-md-6 space-image">
+              <div class="">
+                 <ul class="grid cs-style-3">
+                    <li>
+                       <figure  class="imagen">
+                          <a href="procesos_de_negocio.html">
+                          <img src="assets/Transformacion-digital/transformacion-4.svg" width="300"  height="auto" class="rounded mx-auto d-block" alt="...">
+                          </a>
+                       </figure>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+           <div class="col-md-6 space-image">
+              <div class="">
+                 <ul class="grid cs-style-3">
+                    <li>
+                       <figure class="imagen">
+                          <a href="gestion-del-cambio.html">
+                          <img src="assets/Transformacion-digital/transformacion-3.svg" width="300"  height="auto"class="rounded mx-auto d-block" alt="...">
+                          </a>
+                       </figure>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+            <div class="col-md-6 space-image">
+               <div class="">
+                  <ul class="grid cs-style-3">
+                     <li>
+                        <figure class="imagen">
+                           <a href="enterprise-content-management.html">
+                           <img src="assets/Transformacion-digital/transformacion-1.svg" width="300" height="auto" class="rounded mx-auto d-block" alt="...">
+                           </a>
+                        </figure>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-6 space-image">
+               <div class="">
+                  <ul class="grid cs-style-3">
+                     <li>
+                        <figure class="imagen">
+                           <a href="marketing-cognitivo.html">
+                           <img src="assets/Transformacion-digital/transformacion-2.svg" width="300"  height="auto" class="rounded mx-auto d-block" alt="...">
+                           </a>
+                        </figure>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+      <div id="footer"></div>
+      <script src="js/toucheffects.js"></script>
+   </body>
+   <script src="js/jQuery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+      $(function(){
+        $("#header").load("navbar.html");
+        $("#footer").load("footer.html");
+      });
+   </script>
+   <script src="https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js"></script>
+   <script>
+     window.loadWatsonAssistantChat({
+       integrationID: "43c35974-19fb-47b6-8058-939a0e7bbc33",
+       region: "us-south"
+     }).then(function(instance){
+       instance.render();
+     });
+   </script>
+</html>

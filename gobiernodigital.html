@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Data Center</title>
+   </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/component.css" />
+   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+   <script src="js/snap.svg-min.js"></script>
+
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+   <link rel="stylesheet" href="css/gobiernodigital.css"/>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <body>
+    <div id="header"></div>
+      <div class="parallax row align-items-center">
+         <div class="col titulo">
+            <h1><b>Gobierno</b> Digital.</h1>
+         </div>
+      </div>
+      <div class=" fondo">
+         <div class="wrapper">
+            <div class="content">
+               <!-- card -->
+               <div class="card">
+                  <div class="icon"><i class="material-icons md-36">lock</i></div>
+                  <p class="title">¿Qué es?</p>
+                  <p class="text">Click to see or edit your profile page.</p>
+               </div>
+               <!-- end card -->
+               <!-- card -->
+               <!-- end card -->
+               <!-- card -->
+               <div class="card">
+                  <div class="icon"><i class="material-icons md-36">build</i></div>
+                  <p class="title">¿Comó lo hacemos?</p>
+                  <p class="text">Add or change your contacts and links.</p>
+               </div>
+               <!-- end card -->
+            </div>
+         </div>
+         <hr>
+         <div class="col ti">
+            <h2>El <b>Gobierno Digital</b> o e-government, consiste en: </h2>
+         </div>
+         </section>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-md-4">
+            <div class="container demo-1 no-js">
+            <section id="grid" class="grid clearfix">
+            <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+              <figure>
+                <img src="https://tympanus.net/Tutorials/ShapeHoverEffectSVG/img/1.png" />
+                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                <figcaption>
+                  <p> <img src="assets/2.svg" width="80" height="80" alt=""> </p>
+                  <p></p>
+                  <button disabled>Uso de las tecnologías de la información y la comunicación.</button>
+                </figcaption>
+              </figure>
+            </a>
+            </section>
+            </div><!-- /container -->
+          </div>
+
+          <div class="col-md-4">
+            <div class="container demo-1 no-js">
+            <section id="grid" class="grid clearfix">
+            <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+              <figure>
+                <img src="https://tympanus.net/Tutorials/ShapeHoverEffectSVG/img/1.png" />
+                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                <figcaption>
+                  <p> <img src="assets/2.svg" width="80" height="80" alt=""> </p>
+                  <button disabled>Conocimiento en los procesos internos de gobierno.</button>
+                </figcaption>
+              </figure>
+            </a>
+            </section>
+            </div><!-- /container -->
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="container demo-1 no-js">
+            <section id="grid" class="grid clearfix">
+            <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+              <figure>
+                <img src="https://tympanus.net/Tutorials/ShapeHoverEffectSVG/img/1.png" />
+                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                <figcaption>
+                  <p> <img src="assets/2.svg" width="80" height="80" alt=""> </p>
+
+                  <button disabled>Entrega de los productos y servicios del Estado tanto a los ciudadanos como a la industria.</button>
+                </figcaption>
+              </figure>
+            </a>
+            </section>
+            </div><!-- /container -->
+          </div>
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+  <script>
+			(function() {
+
+				function init() {
+					var speed = 250,
+						easing = mina.easeinout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+		</script>
+
+
+
+
+    <div id="footer"></div>
+   </body>
+   <script src="js/jQuery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+ $(function(){
+   $("#header").load("navbar.html");
+   $("#footer").load("footer.html");
+ });
+</script>
+<script src="https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js"></script>
+<script>
+  window.loadWatsonAssistantChat({
+    integrationID: "43c35974-19fb-47b6-8058-939a0e7bbc33",
+    region: "us-south"
+  }).then(function(instance){
+    instance.render();
+  });
+</script>
+</html>
